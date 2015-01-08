@@ -23,8 +23,9 @@ public class main {
 		pan.setBorder(blackline);
 		t.add(pan);
 		t.setVisible(true);
-		
-		/*//on crée la grille
+		/*
+		 //test
+		//on crée la grille
 		Grille g1 = new Grille(15, 8);
 		
 		
