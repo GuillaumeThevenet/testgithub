@@ -164,14 +164,14 @@ public class map {
 			//StdDraw.setPenColor(StdDraw.BLUE);
 			//StdDraw.filledSquare(i + WIDTH, j + WIDTH, WIDTH);
 			//StdDraw.show(100);
-			new Personnage(i+WIDTH, j+WIDTH, Color.BLUE);
+			Personnage intrus = new Personnage(i+WIDTH, j+WIDTH, Color.BLUE);
 
 		} else {
-			Personnage gard = new Personnage(i+WIDTH, j+WIDTH, Color.RED);
-			gard.setUpKey(KeyEvent.VK_Z);
-			gard.setDownKey(KeyEvent.VK_S);
-			gard.setLeftKey(KeyEvent.VK_Q);
-			gard.setRightKey(KeyEvent.VK_D);
+			Personnage gardien = new Personnage(i+WIDTH, j+WIDTH, Color.RED);
+			gardien.setUpKey(KeyEvent.VK_Z);
+			gardien.setDownKey(KeyEvent.VK_S);
+			gardien.setLeftKey(KeyEvent.VK_Q);
+			gardien.setRightKey(KeyEvent.VK_D);
 		}
 
 	}
