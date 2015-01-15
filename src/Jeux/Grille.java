@@ -58,5 +58,6 @@ public class Grille {
 		}
 	}
 	//déplacer
+
 	//positionner des objets
 }

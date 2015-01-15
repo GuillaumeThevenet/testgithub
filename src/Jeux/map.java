@@ -94,27 +94,24 @@ public class map {
 
 				if (tableau[i][j] == 1) {
 					mur(i, j);
-				} else {
-					couloir(i, j);
-				}
+				} else				
 				if (tableau[i][j] == 2) {
 					lampe(i, j);
-				}
+				} else
 				if (tableau[i][j] == 3) {
 					ordi(i, j);
+				} else {
+					couloir(i, j);
 				}
 
 				if (tableau[i][j] == 4) {
 					perso(i, j, 1);
-				}
+				} else
 				if (tableau[i][j] == 5) {
 					perso(i, j, 2);
 				}
 
-				while (true) {
-					// Personnages.main(args);// PAS THREAD
-					// Test.main(args);
-				}
+				
 			}
 		}
 	}
@@ -164,14 +161,14 @@ public class map {
 		int i = 10 * hori;
 		int j = 10 * verti;
 		if (nbperso == 1) {
-			StdDraw.setPenColor(StdDraw.BLUE);
-			StdDraw.filledSquare(i + WIDTH, j + WIDTH, WIDTH);
-			StdDraw.show(100);
+			//StdDraw.setPenColor(StdDraw.BLUE);
+			//StdDraw.filledSquare(i + WIDTH, j + WIDTH, WIDTH);
+			//StdDraw.show(100);
+			new Personnage(i+WIDTH, j+WIDTH, Color.BLUE);
 
 		} else {
-			StdDraw.setPenColor(StdDraw.RED);
-			StdDraw.filledSquare(i + WIDTH, j + WIDTH, WIDTH);
-			StdDraw.show(100);
+			Personnage gard = new Personnage(i+WIDTH, j+WIDTH, Color.RED);
+			gard.setUpKey(KeyEvent.VK_Z);
 		}
 
 	}
