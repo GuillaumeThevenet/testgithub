@@ -169,6 +169,9 @@ public class map {
 		} else {
 			Personnage gard = new Personnage(i+WIDTH, j+WIDTH, Color.RED);
 			gard.setUpKey(KeyEvent.VK_Z);
+			gard.setDownKey(KeyEvent.VK_S);
+			gard.setLeftKey(KeyEvent.VK_Q);
+			gard.setRightKey(KeyEvent.VK_D);
 		}
 
 	}

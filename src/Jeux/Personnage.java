@@ -69,7 +69,34 @@ public class Personnage extends Thread {
 	// déplacement
 	
 	private int upKey = KeyEvent.VK_UP;
+	private int downKey = KeyEvent.VK_DOWN;
+	private int leftKey = KeyEvent.VK_LEFT;
+	private int rightKey = KeyEvent.VK_RIGHT;
 	
+
+	public int getRightKey() {
+		return rightKey;
+	}
+
+	public void setRightKey(int rightKey) {
+		this.rightKey = rightKey;
+	}
+
+	public int getLeftKey() {
+		return leftKey;
+	}
+
+	public void setLeftKey(int leftKey) {
+		this.leftKey = leftKey;
+	}
+
+	public int getDownKey() {
+		return downKey;
+	}
+
+	public void setDownKey(int downKey) {
+		this.downKey = downKey;
+	}
 
 	public int getUpKey() {
 		return upKey;
@@ -90,15 +117,15 @@ public class Personnage extends Thread {
 				deltaY = +1;
 			}
 
-			if (StdDraw.isKeyPressed(KeyEvent.VK_DOWN)) {
+			if (StdDraw.isKeyPressed(getDownKey())) {
 				deltaY = -1;
 			}
 
-			if (StdDraw.isKeyPressed(KeyEvent.VK_RIGHT)) {
+			if (StdDraw.isKeyPressed(getRightKey())) {
 				deltaX = +1;
 			}
 
-			if (StdDraw.isKeyPressed(KeyEvent.VK_LEFT)) {
+			if (StdDraw.isKeyPressed(getLeftKey())) {
 				deltaX = -1;
 			}
 
