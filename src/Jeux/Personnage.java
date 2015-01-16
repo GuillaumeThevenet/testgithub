@@ -113,19 +113,32 @@ public class Personnage extends Thread {
 			double deltaZ = 1;
 
 			if (StdDraw.isKeyPressed(getUpKey())) {
-				deltaY = +1;
+				if( positionY +1 ==7){
+				}
+				else 
+					deltaY = +1;
+				
 			}
 
 			if (StdDraw.isKeyPressed(getDownKey())) {
-				deltaY = -1;
+				if( positionY -1 ==0){
+				}
+				else 
+					deltaY = -1;
 			}
 
 			if (StdDraw.isKeyPressed(getRightKey())) {
-				deltaX = +1;
+				if( positionX +1 ==15){
+				}
+				else 
+					deltaX = +1;
 			}
 
 			if (StdDraw.isKeyPressed(getLeftKey())) {
-				deltaX = -1;
+				if( positionX -1 ==0){
+				}
+				else 
+					deltaX = -1;
 			}
 
 			this.setPositionX(this.getPositionX()+deltaX);
