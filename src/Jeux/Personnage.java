@@ -20,7 +20,6 @@ public class Personnage extends Thread {
 	public Personnage( int x, int y, Color c) {
 		positionX = x;
 		positionY = y;
-		
 		color = c;
 		
 

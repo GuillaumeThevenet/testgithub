@@ -161,11 +161,11 @@ public class map {
 		int i = 10 * hori;
 		int j = 10 * verti;
 		if (nbperso == 1) {
-			//StdDraw.setPenColor(StdDraw.BLUE);
-			//StdDraw.filledSquare(i + WIDTH, j + WIDTH, WIDTH);
+			StdDraw.setPenColor(StdDraw.BLUE);
+			StdDraw.filledSquare(i + WIDTH, j + WIDTH, WIDTH);
 			//StdDraw.show(100);
 			Personnage intrus = new Personnage(i+WIDTH, j+WIDTH, Color.BLUE);
-
+			
 		} else {
 			Personnage gardien = new Personnage(i+WIDTH, j+WIDTH, Color.RED);
 			gardien.setUpKey(KeyEvent.VK_Z);
@@ -173,7 +173,23 @@ public class map {
 			gardien.setLeftKey(KeyEvent.VK_Q);
 			gardien.setRightKey(KeyEvent.VK_D);
 		}
+		
+		
 
 	}
 
-}
+	
+	/*éclairage éteint
+	
+			for(int i = 0; i< 15; i++){
+				for(int j = 0; j<7; j++){
+					
+					if(StdDraw.isKeyPressed(KeyEvent.VK_SPACE)){
+						StdDraw.clear(Color.BLACK);
+						
+					}
+				}
+			}*/ 
+	
+	
+	}
